@@ -44,18 +44,33 @@ nav{
 
 .test p{
   visibility: hidden;
-  
 }
 
 .test{
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center; /* Parallax effect */
-    background-size: cover; /* Parallax effect */
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
     background-image: url(../imgs/northport-sunset.JPG);
     background-repeat: no-repeat;
     height: 300px;
     text-align: bottom;
 
+} 
+
+/* .test img {
+    visibility: visible;
+    height: 400px;
+} */
+
+@keyframes header {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+header > h1{
+    animation-duration: 7s;
+    animation-name: header;
+    animation-iteration-count: 1;
 }
 
 h2{
@@ -239,6 +254,16 @@ div.summary p, div.towns p, div.weather p, div.welcome p {
     nav{
         font-size: 20px;
     }
+    .test{
+        background-attachment: fixed; /* Parallax effect */
+        background-position: center; /* Parallax effect */
+        background-size: cover; /* Parallax effect */
+        background-image: url(../imgs/northport-sunset.JPG);
+        background-repeat: no-repeat;
+        height: 300px;
+        text-align: bottom;
+    
+    }
 
     .test{
         height: 500px;
@@ -252,6 +277,25 @@ div.summary p, div.towns p, div.weather p, div.welcome p {
         padding: 0 240px;
         /* text-align: center; */
     }
+
+    @keyframes quote {
+        from {opacity: 0;
+        }
+        to {opacity: 1;
+        }
+      }
+    
+    .test p{
+        animation-duration: 7s;
+        animation-name: header;
+        animation-iteration-count: 1;
+    }
+
+    .test img{
+        visibility: hidden;
+    }
+    
+    
     
 
 }
@@ -264,6 +308,12 @@ div.summary p, div.towns p, div.weather p, div.welcome p {
         -webkit-transition: initial; /* sets to default setting */
         transition: initial; /* sets to default setting */
       }
+    header > h1{
+        animation: none;
+     }
+    .test p {
+        animation: none;
+    }
 }
 
 
