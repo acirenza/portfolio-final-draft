@@ -74,8 +74,8 @@ header > h1{
 }
 
 h2{
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
     padding-top: 10px;
     text-align: center;
 }
@@ -155,8 +155,9 @@ div.summary, div.towns, div.weather, div.welcome {
 }
 
 div.summary p, div.towns p, div.weather p, div.welcome p {
-    padding-top: 5px;
+    padding-top: 10px;
     line-height: 1.6;
+    font-size: 14px;
 }
 
 .flex_container{
@@ -197,9 +198,15 @@ label{
   }
 
 legend{
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     text-transform: uppercase;
     font-size: 125%;
+}
+
+fieldset > p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 40px;
 }
 
 .item_1, .item_2, .item_3, .item_4, .item_5{
@@ -216,8 +223,14 @@ legend{
 .beach:hover{
     border: 5px #9F5F80 solid;
     /* filter: drop-shadow(8px 8px 10px #9F5F80); */
-    filter: saturate(2);
+    /* filter: saturate(2); */
 }
+
+.parallax p{
+    font-size: 14px;
+
+}
+
 
 
 
@@ -279,7 +292,7 @@ legend{
     }
 
     div.summary p, div.towns p, div.weather p, div.welcome p {
-        padding-top: 5px;
+        /* padding-top: 5px; */
         line-height: 1.6;
     }
 
@@ -296,16 +309,6 @@ legend{
 
     nav{
         font-size: 20px;
-    }
-    .test{
-        background-attachment: fixed; /* Parallax effect */
-        background-position: center; /* Parallax effect */
-        background-size: cover; /* Parallax effect */
-        background-image: url(../imgs/northport-sunset.JPG);
-        background-repeat: no-repeat;
-        height: 300px;
-        text-align: bottom;
-    
     }
 
     .test{
@@ -341,13 +344,36 @@ legend{
     div.container {
         height: auto;
     }
+
+    .parallax{
+        background-attachment: fixed; /* Parallax effect */
+        background-position: center; /* Parallax effect */
+        background-size: cover; /* Parallax effect */
+        background-image: url(../imgs/orange_sky.jpg);
+        background-repeat: no-repeat;
+        height: 700px;
+        text-align: bottom;
+        color: black;
+    
+    }
+    
+    .parallax h1, p{
+        visibility: visible;
+        /* padding-top: 1px; */
+        /* padding-left: 150px; */
+        
+    }
+
+    .parallax p{
+        font-size: 14px;
+    }
     
     
     
 
 }
 
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1100px){
     .photo_div{
         grid-template-columns: auto auto auto;
         justify-items: center;
@@ -395,6 +421,15 @@ legend{
 
     }
 
+    .flex_container{
+        height: 700px;
+    }
+
+    .nav_links{
+        width: 100%;
+    }
+
+
 
 }
 
@@ -402,6 +437,11 @@ legend{
     .test{
         background-attachment: initial;
     }
+
+    .parallax{
+        background-attachment: initial;
+    }
+
     .skip a{
         -webkit-transition: initial; /* sets to default setting */
         transition: initial; /* sets to default setting */
